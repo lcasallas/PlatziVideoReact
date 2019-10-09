@@ -14,11 +14,12 @@
 	border-radius: 40px;
 	color: white;
 	padding: 60px 68px 40px;
-	min-height: 700px;
+	min-height: 600px;
 	width: 300px;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
+	box-sizing: unset;
 }
 
 .login__container--form {
@@ -75,19 +76,31 @@
 	text-decoration: underline;
 }
 .input {
+	background-color: transparent;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 2px solid white;
 	font-family: 'Muli', sans-serif;
-	font-size: 16px;
-	color: white;
-	border: 2px solid white;
-	border-radius: 30px;
-	background-color: rgba(255, 255, 255, 0.1);
+	margin-bottom: 20px;
 	padding: 0px 20px;
+	outline: none;
 	height: 50px;
-	width: 70%;
 }
+
 ::placeholder {
 	color: white;
 }
-.input:focus {
-	outline: none;
+.button {
+	background-color: rgba(255, 255, 255, 0.3);
+	border: none;
+	color: white;
+	border-radius: 25px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Muli', sans-serif;
+	height: 50px;
+	letter-spacing: 1px;
+	margin: 10px 0px;
 }
