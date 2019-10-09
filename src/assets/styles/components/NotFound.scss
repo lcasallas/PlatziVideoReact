@@ -1,0 +1,37 @@
+.mensaje {
+	background: linear-gradient(#21c08b, #ab88ff);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px 0px;
+	min-height: calc(100vh - 200px);
+}
+.mensaje__container {
+	color: white;
+	padding: 60px 68px 40px;
+	min-height: 100px;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.mensaje__container p {
+	margin: 0px;
+}
+.mensaje__container--nroerror {
+	font-size: 50px;
+	animation-duration: 1s;
+	animation-name: palpito;
+	animation-iteration-count: infinite;
+	transition: 450ms;
+}
+@keyframes palpito {
+	from {
+		font-size: 50px;
+	}
+	to {
+		font-size: 80px;
+	}
+}
