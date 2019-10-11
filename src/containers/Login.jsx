@@ -27,7 +27,7 @@ const Login = props => {
 	return (
 		<section className='login'>
 			<div className='login__container'>
-				<h2 tabindex='0'>Inicia sesión</h2>
+				<h2 tabIndex='0'>Inicia sesión</h2>
 				<form
 					action=''
 					className='login__container--form'
